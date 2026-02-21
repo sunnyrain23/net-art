@@ -1,0 +1,132 @@
+html, body {
+  position: relative;
+  min-height: 2500px;
+  min-width: 2500px;
+  overflow: auto;
+  background:tan;
+  color:black;
+}
+
+
+.highlight {
+  background-color: darkolivegreen;
+  text-decoration: underline;
+  color: white;
+  padding: 2px;
+}
+
+
+#main-header {
+  border-bottom: 5px double #4b3621; 
+}
+
+.box {
+  width: 250px;
+  height: 450px;
+  padding: 10px;
+  border: 2px inset black;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: white; 
+  overflow: hidden; 
+  opacity: 95;
+}
+
+img {
+  position: absolute;
+  right:0;
+  bottom:0;
+  width: 500px;
+  z-index:1;
+  opacity: 0.85;
+}
+
+.Secret {
+  font-weight: bold;
+  font-size:90px;
+  position: absolute;
+  right:0px;
+  bottom: 250px;;
+  z-index:2;
+  color:red;
+}
+
+.Title {
+  font-weight: bold;
+  font-family: "Merriweather";
+  font-size:60px;
+  position: absolute;
+  left:0px;
+  top: 0px;;
+  z-index:2;
+  font-style: italic;
+  color: #4b3621;
+  text-align: center;
+  
+}
+
+
+
+.box img {
+  width: 100%;
+  height: auto;
+  position: static; 
+  opacity: 1;      
+}
+
+
+.topright {
+  font-weight: bold;
+  font-size:90px;
+  position: absolute;
+  top:0px;
+  right: 250px;;
+  z-index:2;
+  color: darkolivegreen;
+}
+.choice {
+
+  font-size:35px;
+  position: absolute;
+  top:100px;
+  right: 425px;;
+  z-index:2;
+  color: darkolivegreen;
+}
+
+.polaroid {
+
+  font-size:35px;
+  position: absolute;
+  top:100px;
+  right: 425px;;
+  z-index:2;
+  color: darkolivegreen;
+}
+
+.Quote{
+  font-weight: bold;
+  font-family: "Merriweather";
+  font-size:60px;
+  position: absolute;
+  bottom:100px;
+  left: 0px;;
+  z-index:2;
+  font-style: italic;
+  color: #4b3621;
+  text-align: center;
+  
+}
+
+.arrow{
+  font-weight: bold;
+  font-family: "Merriweather";
+  font-size:60px;
+  position: absolute;
+  bottom:200px;
+  left: 100px;;
+  z-index:2;
+  color: #4b3621;
+  text-align: center;
+}
