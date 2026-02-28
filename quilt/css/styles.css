@@ -1,25 +1,100 @@
-* {
-    margin: 0;
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;                  
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(4, 1fr);    
     height: 100vh;                  
     width: 100vw;                   
 }
 
-.flex-item {
-    flex: 1 0 30%;
-    /* This formatting combines flex-grow, flex-shrink, and basis (of 30% width) into one CSS declation—pretty neat! */
+.grid-item { 
+    border: 1px solid rgba(0,0,0,0.1); 
+    display: grid; 
+    place-items: center; 
+    overflow: hidden; 
 }
 
-.item1 { background-color: #FF5733; } 
-.item2 { background-color: #33FF57; } 
-.item3 { background-color: #3357FF; } 
-.item4 { background-color: #FFFF33; }
-.item5 { background-color: #FF33FF; } 
-.item6 { background-color: #33FFFF; } 
-.item7 { background-color: #FFA500; } 
-.item8 { background-color: #800080; }
-.item9 { background-color: #FFD700; }
+.small-box { 
+    background-color: blue; 
+    width: 30px; 
+    height: 30px; 
+}
+
+.small-box2 { 
+    background-color: green; 
+    width: 50px; 
+    height: 80px; 
+}      
+        
+.small-box3 { 
+    background-color: cyan; 
+    width: 20px; 
+    height: 40px; }  
+.small-box4 { 
+    background-color: palegoldenrod; 
+    width: 20px; 
+    height: 80px; 
+}  
+        
+.small-box5 { 
+    background-color: antiquewhite; 
+    width: 40px; 
+    height: 40px; 
+}  
+        
+.small-box6 { 
+    background-color: #B18061; 
+    width: 60px; 
+    height: 60px; 
+}  
+        
+.small-box7 { 
+    background-color: cornflowerblue; 
+    width: 70px; 
+    height: 30px; 
+}  
+        
+.small-box8 { 
+    background-color: darkolivegreen; 
+    width: 30px; 
+    height: 30px; 
+}  
+        
+.small-box9 { 
+    background-color: firebrick; 
+    width: 40px; 
+    height: 60px; 
+}  
+
+.item1 { 
+    background-color: grey; 
+} 
+.item2 { 
+    background-color: #87CEEB; 
+} 
+.item3 { 
+    background-color: #99BCAD; 
+} 
+.item4 { 
+    background-color: #B18061; 
+}
+.item5 { 
+    background-color: #B0E0E6; 
+} 
+.item6 { 
+    background-color: #dfdac4; 
+} 
+.item7 { 
+    background-color: #8FD9FB; 
+} 
+.item8 { 
+    background-color: #9FAC9D; 
+}
+.item9 { 
+    background-color: #A8DCAB; 
+}
