@@ -1,1 +1,63 @@
+html, body {
+  position: relative;
+  min-height: 500px;
+  min-width: 500px;
+  overflow: auto;
+  background: white;
+  color:black;
+}
 
+
+.dog {
+  position: absolute;
+  left:0;
+  bottom:0;
+  width: 500px;
+  z-index:1;
+}
+
+
+
+.bone {
+  position: absolute;
+  right:0;
+  top:210px;
+  width: 10px;
+  z-index:1;
+}
+
+.bone{
+width: 100px;
+max-height: auto;
+}
+
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(500px);
+  }
+}
+
+
+.dog:hover {
+  animation: move 20s;
+  transition: ease-in;
+}
+
+
+@keyframes bone-moves {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(200px);
+  }
+}
+
+.bone {
+  animation: bone-moves 1.5s infinite alternate;
+}
