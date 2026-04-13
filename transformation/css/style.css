@@ -1,0 +1,41 @@
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative; 
+}
+
+
+.instructions {
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+        transform: translate(-50%, calc(-50% - 100px));
+
+    pointer-events: none; 
+    user-select: none;
+    width: 100%;
+}
+
+
+
+.flower {
+    position: absolute;
+    font-size: 2rem;
+    transform: translate(-50%, -50%); 
+    user-select: none;
+    animation: grow 0.3s ease-out;
+}
+
+@keyframes grow {
+    from { transform: translate(-50%, -50%) scale(0); }
+    to { transform: translate(-50%, -50%) scale(1); }
+}
